@@ -1,0 +1,91 @@
+/* Apply to the whole page to center nav and give background */
+body,html {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #e0e7ff;
+  /* light blue-ish background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+nav {
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  /* a bit wider */
+  background-color: #f7f7f7;
+  /* light gray */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  /* Flex inside nav for vertical layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.mic {
+  height: 70px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.icons-large {
+  background-color: #7a7a7a;
+  border-radius: 12px;
+  margin: 30px;
+  color: #67a0fc;
+  /* blue */
+  padding: 20px;
+  /* add some padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 100px;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 10px;
+  height: 80px;
+  font-size: 3rem;
+  /* controls icon size */
+}
+
+.icons-row .camera {
+  height: 55px;
+  color: #4b5563;
+  /* gray-700 */
+}
+
+.icons-row .sos {
+  height: 55px;
+  color: #dc2626;
+  /* red-600 */
+}
+
+.icons-row .instructions {
+  height: 55px;
+  color: #16a34a;
+  /* green-600 */
+}
