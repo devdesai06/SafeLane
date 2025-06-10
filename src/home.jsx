@@ -17,8 +17,8 @@ function Home() {
     const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
 
     recognition.lang = "en-IN";
-    recognition.interimResults = false;
-    recognition.maxAlternatives = 1;
+   
+ 
 
     recognition.onstart = () => {
       setListening(true);
